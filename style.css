@@ -1,0 +1,86 @@
+
+.m3 {
+    width: 33%;
+    margin: auto;
+    display: -webkit-inline-box;
+}
+
+
+
+
+/*Descendant Selectors */
+
+#descendant p span {
+    color: gold;
+    background-color: black;
+}
+
+/*Child Selectors*/
+
+#child > p {
+    color: gold;
+    background-color: black;
+}
+
+/*Adjacent Selectors - selektory sąsiadujące */
+
+#adjacent hr + p{
+    color: gold;
+    background-color: black;
+}
+
+/*Attribute Selectors*/
+
+#attribute p[class]{
+    color: gold;
+    background-color: black;
+}
+#attribute p[class~="klasa2"]{ /* tylda "~" przed znakiem równości pozwala wybrać wszystkie elementy które zawierają w zbiorze atrybutu class wartość klasa2 */
+    color: red;
+}
+#attribute a[href$="pdf"]{ /* Znak dolara przed znakiem równości pozwala wybrać wszystkie elementy które wartość atrybutu "href" kończą się wartością pdf*/
+    color: red;
+}
+#attribute a[href^="http"]{ /* Znak "^" przed znakiem równości pozwala wybrać wszystkie elementy które wartość atrybutu "href" ZACZYNA się wartością http*/
+    color: green;
+}
+
+/*Pseudo Selectors*/
+
+#pseudo a:hover{
+    color: gold;
+    background-color: black;
+}
+#pseudo a:active{
+    color: red;
+    background-color: black;
+}
+#pseudo a:visited{
+    color: red;
+    background-color: white
+    ;
+}
+
+/*First & Last Child Selectors*/
+
+#first-last article p:first-child , #first-last article p:last-child{
+    color: gold;
+    background-color: black;
+}
+
+/*First & Last of Type Selectors*/
+
+#first-last-of p:first-of-type , #first-last-of p:last-of-type{
+    color: gold;
+    background-color: black;
+}
+
+/*nth Child Selectors*/
+
+
+
+
+
+
+
+

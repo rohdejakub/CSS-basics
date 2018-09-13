@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ćwiczenia CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+</head>
+<body>
+
+    <div id="descendant">
+        <h3>Descendant Selectors</h3><hr>
+        <p>Descendant <span> selectors</span></p>
+    </div>
+
+    <div id="child">
+        <h3>Child Selectors</h3><hr>
+        <p>This is a child</p>
+        <div>
+            <p>This is not</p>
+        </div>
+    </div>
+
+    <div id="adjacent">
+            <h3>Adjacent Selectors - selektory sąsiadujące</h3><hr>
+            <p>To jest akapit sąsiadujący z tagiem hr</p>
+            <p>ten akapit nie sąsiaduje z hr</p>
+    </div>
+
+    <div id="attribute">
+            <h3>Attribute Selectors</h3><hr>
+            <p>to jest akapit bez atrybutu class</p>
+            <p class="klasa1">Akapit z atrybutem class = klasa1 </p>
+            <p class="klasa1 klasa2">Akapit z atrybutem class = klasa1 klasa2 </p>
+
+            <a href="test.pdf">Link do pliku pdf</a>
+            <a href="http://wp.pl">Link do strony http</a>
+            <a href="test.pdf">Link do pliku pdf</a>
+            <a href="http://wp.pl">Link do strony http</a>
+    </div>
+
+    <div id="pseudo">
+            <h3>Pseudo Selectors</h3><hr>
+           
+            <a href="#descendant">Link do strony http</a>
+            <a href="http://">Link do strony http</a>
+    </div>
+    
+    <div id="first-last">
+            <h3>First & Last Child Selectors</h3><hr>
+            <article>
+                <p>To jest pierwszy akapit</p>
+                <p>To jest drugi akapit</p>
+                <p>To jest trzeci , ostatni akapit</p>
+            </article>
+    </div>
+
+    <div id="first-last-of">
+            <h3>First & Last of Type Selectors</h3><hr>
+           
+                <p>To jest pierwszy akapit</p>
+                <p>To jest drugi akapit</p>
+                <p>To jest trzeci , ostatni akapit</p>
+                <span>To nie jest akapit</span>
+      
+    </div>
+
+    <div id="nth">
+        <div class="m3">
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+                <li>item 6</li>
+                <li>item 7</li>
+                <li>item 8</li>
+            </ul>
+        </div>
+        <div class="m3">
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                    <li>item 4</li>
+                    <li>item 5</li>
+                    <li>item 6</li>
+                    <li>item 7</li>
+                    <li>item 8</li>
+                </ul>
+        </div>
+        <div class="m3">
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                    <li>item 4</li>
+                    <li>item 5</li>
+                    <li>item 6</li>
+                    <li>item 7</li>
+                    <li>item 8</li>
+                </ul>
+        </div>
+    </div>
+
+</body>
+</html>

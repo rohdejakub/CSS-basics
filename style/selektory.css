@@ -1,10 +1,13 @@
 
-.m3 {
-    width: 33%;
+.m4 {
     margin: auto;
     display: -webkit-inline-box;
 }
-
+div[id]{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+}
 
 
 
@@ -75,12 +78,44 @@
     background-color: black;
 }
 
-/*nth Child Selectors*/
+/*nth Child Selectors and nth of type*/
 
+#nth div:nth-of-type(1) li:nth-child(2){
+    color: gold;
+    background-color: black;
+}
+#nth div:nth-of-type(2) li:nth-child(even){
+    color: gold;
+    background-color: black;
+}
+#nth div:nth-of-type(3) li:nth-child(odd){
+    color: gold;
+    background-color: black;
+}
+#nth div:nth-of-type(4) li:nth-child(3n+4){
+    color: gold;
+    background-color: black;
+}
 
+/*Combining Selectors*/
 
+#combining article .combining1{ /*To rozwiązanie nie ma wpływu na dokument ponieważ ta reguła odnosi się do potomka artykułu o klasie .combining1 a nie do artykułu z taką klasą , należy zwrócić uwagę na "spację"*/
+    color: gold;
+    background-color: black;
+}
+#combining article.combining1{ /*To rozwiązanie działa , brak spacji między selektorem artykułu a klasą*/
+    color: gold;
+    background-color: black;
+}
 
+/*The Universal Selector*/
 
+/* Selektor jest bezpośrednim selektorem wszystkich tagów w dokumencie
 
+*{
+     color: gold;
+     background-color: black;
+}
 
+*/
 
